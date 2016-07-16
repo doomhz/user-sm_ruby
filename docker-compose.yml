@@ -1,0 +1,10 @@
+app:
+  
+  #image: ruby:2.3-onbuild # Get help at https://hub.docker.com/_/ruby/
+  build: . # Get help at http://blog.carbonfive.com/2015/03/17/docker-rails-docker-compose-together-in-your-development-workflow/
+  volumes:
+    - .:/app
+  ports:
+    - "3000:3000"
+  env_file:
+    - '.env.app'
