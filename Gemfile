@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'activemodel', '~> 5.0'
 gem 'grape', '~> 0.16.2'
 
 group :development, :test do
